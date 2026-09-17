@@ -1,63 +1,32 @@
 # Semicolon
 
-Semicolon is a front-end prototype for cryptographic discovery, risk analysis, and post-quantum cryptography (PQC) readiness. It turns an uploaded file into an explainable inventory, risk view, recommended actions, and downloadable executive report.
+> Cryptographic discovery, contextual risk analysis, and post-quantum readiness—built to turn hidden cryptography into an actionable migration plan.
 
-## What it includes
 
-- A scan-first dashboard: analysis remains hidden until a file is uploaded or a live demo scan is run.
-- Five consistent risk bands: Safe, Low, Moderate, High, and Critical.
-- Risk breakdown, dependency topology, current-vs-projected risk chart, crypto inventory, PQC readiness, and recommendation engine.
-- Previous scans and re-scan reminders in one place.
-- A multi-page PDF report for the current scan.
-- Profile menu with activity, account settings, help centre, and logout.
-- A research-informed News article and reference library.
+\
 
-## Run locally
 
-### Requirements
+Semicolon is a modern front-end prototype for discovering cryptographic assets, visualising cryptographic risk, and preparing organisations for post-quantum cryptography (PQC) migration.
 
-- Node.js 18 or later
-- npm
+Instead of producing another disconnected list of algorithms, Semicolon connects discovery to context: where an asset lives, its risk band, related dependencies, confidence, migration urgency, recommended action, and executive-ready report.
 
-### Install and start
+## Why Semicolon?
 
-```bash
-npm install
-npm run dev
-```
+Cryptography is everywhere: certificates, keys, protocols, service configurations, repositories, and third-party dependencies. The hardest part of de\_modules
 
-Open the local address shown in the terminal, normally `http://localhost:5173`.
+dist
 
-### Production build
+.env
 
-```bash
-npm run build
-```
+.DS\_Store
 
-The production files are created in `dist/`.
+zsh: command not found: node\_modules
 
-## Using the dashboard
+zsh: command not found: dist
 
-1. Sign in or continue to the dashboard.
-2. Use **Upload file to scan** to choose a certificate, key, configuration, or code file; alternatively use **Run live scan** to see the demo flow.
-3. Wait for scanning to finish. Only then will risk analysis, topology, inventory, PQC readiness, recommendations, and reports appear.
-4. Review the findings and download the executive PDF report from **Reports**.
+zsh: command not found: .env
 
-> This is a prototype interface. Its displayed risk results and recommendations are decision-support examples, not a guarantee of security or a replacement for expert validation.
+zsh: command not found: .DS\_Store
 
-## Project structure
+antrikshachauhan\@Antrikshas-MacBook-Air semicolon-github-ready %&#x20;
 
-```text
-src/
-  components/       Shared UI, including the top bar and profile menu
-  context/          Lightweight browser-based authentication state
-  pages/            Home, Dashboard, News, References, and account pages
-```
-
-## Deploying to GitHub Pages
-
-This repository is ready to be stored on GitHub. To publish it as a live website, configure a GitHub Pages deployment for a Vite/React app, or deploy the `dist/` output to another hosting provider after running `npm run build`.
-
-## Research
-
-The News and References pages link to the supplied papers and primary NIST PQC migration guidance. Claims are presented conservatively and should be reviewed before making policy or security decisions.
